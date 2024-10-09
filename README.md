@@ -46,3 +46,20 @@ Dart comments comes in three categories:
               STATE
             }
     ```
+
+## Dart's main() function: 
+
+The main() function is the top-level function in every dart/flutter application.
+-> from the main() function is where the app's execution starts, this function always returns `void` which means it returns or it's return type is void.
+
+```dart
+// arrow function approach
+  void main() => runApp(MyApp);
+
+// other approach
+void main() {
+  runApp(MyApp());
+}
+```
+
+the main() function calls the `runApp()` method which then calls the `MyApp()` class constructor function [We will see that in flutter or later in classes].
