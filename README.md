@@ -63,3 +63,5 @@ void main() {
 ```
 
 the main() function calls the `runApp()` method which then calls the `MyApp()` class constructor function [We will see that in flutter or later in classes].
+
+[void]: void keyword shows or implies that our main function does not return anything or it's return type is nothing
