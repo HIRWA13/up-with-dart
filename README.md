@@ -65,3 +65,29 @@ void main() {
 the main() function calls the `runApp()` method which then calls the `MyApp()` class constructor function [We will see that in flutter or later in classes].
 
 [void]: void keyword shows or implies that our main function does not return anything or it's return type is nothing
+
+## Referencing variables in Dart
+
+In Dart, variables store references to a value
+
+-> we can use `var` to declare a variable without specifying it's type, here when you declare a variable without a type, Dart will `infer` the type of the variable as the type of it's value.
+
+```dart
+  var name = "Dart"; // the type will be inferred to be of string type.
+```
+
+-> it's better to use the a type when declaring a variable, here it will be easy for us to read and understand the codes so as making our codebase type safe.
+
+```dart
+  String name = "Dart";
+```
+
+### Null values: 
+-> We get `null` when we declare a variable and then we don't give it any value to store.
+
+### Final and Const
+
+-> we use final and const when the value of the variable won't change.
+-> We use const for storing `compile-time` constants meaning constants that we know the value of the variable at compile-time.
+
+-> We use final for values that are not known  during compile-time like `Futures`.
